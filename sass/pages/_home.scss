@@ -1,0 +1,155 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.content{
+
+}
+.dashboard{
+	margin: 15px auto;
+  opacity: 1;
+	border-radius: 5px; 
+	max-width: 800px;
+	border: 5px solid $blue-dark;
+}
+.machine{
+	border: 2px solid black;
+}
+.col-9{
+	width: 75%;
+	float: left;
+}
+.col-8{
+	width: 66.66%;
+	float: left;
+}
+.col-2{
+	width: 16.66%;
+	float: left;
+}
+.col-3{
+	width: 25%;
+	float: left;
+}
+.col-4{
+	width: 33.33%;
+	float: left;
+}
+.col-6{
+	width: 50%;
+	float: left;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.options{
+	
+}
+.option{
+	font-size: 16px;
+	.left_panel{
+		background: $blue-light;
+		border-top: 2px solid $blue-dark;
+		border-bottom: 2px solid $blue-dark;
+	}
+	.sr_no{
+		border-right: 2px solid $blue-dark;
+		padding: 15px 10px;
+	}
+	.name{
+		border-right: 2px solid $blue-dark;
+		padding: 15px 10px;
+	}
+	.logo{
+		border-right: 2px solid $blue-dark;
+		padding: 4px 10px;
+		font-size: 0px;
+		text-align: center;
+		img{
+			width: 40px;
+			height: 40px;
+		}
+	}
+	.arrow_left{
+		img{
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;			
+		}
+	}
+}
+.heading{
+	color: $blue;
+	padding: 10px 30px;
+	margin: 0;
+}
+.timer{
+	padding: 10px 30px! important;
+	font-weight: bold;
+	color: $blue;
+	margin: 0;	
+}
+.grid-container{
+	 margin: 20px 40px;
+	 display: inline-block;
+	.grid{
+		border: 2px solid $gray;
+		width: 70px;
+		height: 70px;
+		display: inline-block;
+		background: $white;
+		@include fade();
+		&:nth-child(4n+4){
+			// display: block;
+		}
+		&.transparent{
+			background: $background-color !important;
+			opacity: 0.5;
+		}
+	}
+}
+.result-container{
+	display: inline-block;
+	.result{
+		font-size: 24px;
+		font-weight: bold;
+		width: 100%;
+		text-align: center;	
+	}
+	.win{
+		color: $green;
+	}
+	.lost{
+		color: $red;
+	}
+}
+.score-card{
+	display: flex;
+  padding: 0px 40px;
+  .level{
+  	font-size: 18px;
+  	color: $blue;
+  	margin: 5px;
+  	font-weight: bold;
+  }
+  .score{
+  	font-size: 18px;
+  	margin: 5px;
+  	color: $blue;
+  	font-weight: bold;
+  }
+}
+.count{
+	color: $voilet;
+	padding: 2px 15px;
+	background: $gray-light;
+	border-radius: 5px; 
+}
+.play-again{
+    text-decoration: none;
+    background: $gray-light;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}
